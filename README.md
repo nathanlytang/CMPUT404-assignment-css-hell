@@ -12,6 +12,12 @@ Read this comic http://theoatmeal.com/comics/design_hell
 
 git clone https://github.com/abramhindle/CMPUT404-assignment-css-hell.git
 
+Project Gutenberg HTML Modifications
+=================
+* Remove some conflicting CSS from the HTML file
+* Link new stylesheet to HTML file
+* Update paths for images
+
 License/Copyright
 =================
 
