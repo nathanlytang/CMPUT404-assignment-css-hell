@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+:root {
+    
+    --filter-inverted: invert(0);
+    --boxshadow: #dadada;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#header {
+    text-align: left;
+}
+
+#content {
+    width: 50%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: 400;
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+#profileContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#profileImg {
+    height: 10em;
+    border-radius: 50%;
+    margin: 1em;
+}
+
+.section {
+    margin: 10vh;
+}
+
+#projects {
+    width: 80%;
+    margin: 0 auto 1rem auto;
+    padding-top: 5vh;
+}
+
+@media only screen and (max-width: 600px) {
+    #projectsTiles {
+        display: inline-grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        max-width: 100vw;
+        grid-gap: 1rem;
+        list-style: none;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 2000px) {
+    #projectsTiles {
+        display: inline-grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        max-width: 50vw;
+        grid-gap: 1rem;
+        list-style: none;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    #projectsTiles {
+        display: inline-grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        max-width: 40vw;
+        grid-gap: 1rem;
+        list-style: none;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.projectGallery {
+    padding: 2rem 2rem 0 2rem;
+    color: #071013;
+    height: 20rem;
+    position: relative;
+    border-radius: 0.25em;
+    background-color: var(--shade-color);
+    box-shadow: 1px 1px 10px 1px var(--boxshadow);
+}
+
+.projectGallery:hover {
+    transform: translateY(-5px);
+}
+
+.projectGitLink {
+    float: right;
+    width: 10%;
+    opacity: 0.9;
+}
+
+.gitLogo {
+    width: 100%;
+    float: right;
+    filter: var(--filter-inverted);
+}
+
+.projectGitLink:hover {
+    /* Temp bounce effect */
+    animation: bounce 0.5s 1;
+    -webkit-animation: bounce 0.5s 1;
+    -moz-animation: bounce 0.5s 1;
+    -o-animation: bounce 0.5s 1;
+}
+
+.projectLink {
+    float: right;
+    width: 10%;
+    margin-left: 10px;
+}
+
+.extern {
+    width: 100%;
+    float: right;
+    filter: var(--filter-inverted);
+    margin-left: 10px;
+}
+
+.projectLink:hover {
+    /* Temp bounce effect */
+    animation: bounce 0.5s 1;
+    -webkit-animation: bounce 0.5s 1;
+    -moz-animation: bounce 0.5s 1;
+    -o-animation: bounce 0.5s 1;
+}
+
+.projectTitles {
+    clear: both;
+    margin-top: 4rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--title-color);
+}
+
+.projectDesc {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    color: var(--description-color);
+    font-size: 0.98rem;
+}
+
+.projectKeywords {
+    font-family: 'DM Mono', 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 2rem;
+    word-spacing: 0.8em;
+    color: var(--description-color);
+}
+
+#more-button {
+    font-family: 'DM Mono', 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    width: 100%;
+    margin: 6vh auto;
+    text-align: center;
+}
+
+#projects-page {
+    width: 100%;
+}
+
+#project-page-desc {
+    text-align: center;
+    margin: 0vh auto 5vh auto;
+}
+
+#abilities {
+    text-align: center;
+}
+
+#abilities p {
+    width: fit-content;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 4px 10px;
+    margin: 2px;
+    display: inline;
+    line-height: 2.5em;
+    font-family: monospace;
+}
+
+#sidebar {
+    height: 100%;
+    width: 10vw;
+    display: inline;
+    float: right;
+}
